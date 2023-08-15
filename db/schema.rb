@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 2021_05_04_154240) do
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
-    t.string "category"
     t.text "content"
+    t.string "category"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
